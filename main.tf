@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 resource "aws_iam_role" "lambda_role" {
   name = "lambda-devops-role"
 
@@ -61,3 +57,5 @@ resource "aws_apigatewayv2_stage" "stage" {
   name   = "$default"
   auto_deploy = true
 }
+
+//Teste commit
